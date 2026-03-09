@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="hellofx.controllers.HomeController"
+            prefWidth="1000" prefHeight="600"
+            style="-fx-background-color: #0B1E33;">
+
+    <!-- LEFT SIDEBAR -->
+    <left>
+        <VBox spacing="20"
+              prefWidth="220"
+              style="-fx-background-color: #081625; -fx-padding: 30;">
+
+            <Label text="QCU"
+                   style="-fx-text-fill: gold; -fx-font-size: 28px; -fx-font-weight: bold;"/>
+
+            <Label text="Lost &amp; Found"
+                   style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+
+            <Separator/>
+
+            <Button text="Home"
+                    style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+
+            <Button text="Report Item"
+                    onAction="#goToReport"
+                    style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+
+            <Button text="View Items"
+                    onAction="#goToView"
+                    style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+
+            <Button text="Notifications"
+                    onAction="#goToNotification"
+                    style="-fx-background-color: transparent; -fx-text-fill: white;"/>
+
+            <Button fx:id="adminButton"
+                    text="Admin Panel"
+                    onAction="#goToAdmin"
+                    style="-fx-background-color: transparent; -fx-text-fill: gold;"/>
+
+        </VBox>
+    </left>
+
+    <!-- CENTER CONTENT -->
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+
+            <Label text="Welcome to QCU Lost and Found"
+                   style="-fx-text-fill: gold; -fx-font-size: 30px; -fx-font-weight: bold;"/>
+
+            <Label text="Report or search for lost items."
+                   style="-fx-text-fill: white; -fx-font-size: 16px;"/>
+
+        </VBox>
+    </center>
+
+</BorderPane>
